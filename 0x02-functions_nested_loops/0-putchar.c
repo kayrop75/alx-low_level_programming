@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ *  * main - Entry point of the program
+ *   *
+ *    * Description: Prints the "_putchar" string using nested loops.
+ *     *
+ *      * Return: Always 0 (Success)
+ *       */
 int main(void)
 {
 	    char word[] = "_putchar";
@@ -16,7 +23,8 @@ int main(void)
 						        }
 
 			    _putchar('\n');
+			        fflush(stdout);
 
-			        return 0;
+				    return 0;
 }
 
