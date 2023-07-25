@@ -8,16 +8,17 @@
  *     */
 void print_array(int *a, int n)
 {
-	    for (int i = 0; i < n; i++)
+	    if (a != NULL && n > 0)
 		        {
-				        printf("%d", a[i]);
+				        for (int i = 0; i < n; i++)
+						        {
+								            printf("%d", a[i]);
 
-					        if (i != n - 1)
-							        {
-									            printf(", ");
-										            }
-						    }
-
-	        printf("\n");
-}
-
+									                // Print comma and space after all elements except the last one
+											//             if (i != n - 1)
+											//                             printf(", ");
+											//                                     }
+											//                                             printf("\n");
+											//                                                 }
+											//                                                 }
+											//

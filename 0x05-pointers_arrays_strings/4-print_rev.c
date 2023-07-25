@@ -1,23 +1,15 @@
 #include "main.h"
 
 /**
- *  * _strlen - Returns the length of a string.
- *   * @s: Pointer to the string.
+ *  * _putchar - Writes a character to the standard output (stdout).
+ *   * @c: The character to be written.
  *    *
- *     * Return: Length of the string (excluding the null terminator).
- *      */
-int _strlen(char *s)
-{
-	    int length = 0;
-
-	        while (*s != '\0')
-			    {
-				            length++;
-					            s++;
-						        }
-
-		    return length;
-}
+ *     * Return: On success, the character written is returned.
+ *      * On error, -1 is returned.
+ *       *
+ *        * Note: This function is provided by you separately. Make sure it is declared
+ *         * in the main.h header file.
+ *          */
 
 /**
  *  * print_rev - Prints a string in reverse, followed by a new line.
