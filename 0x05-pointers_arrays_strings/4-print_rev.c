@@ -1,29 +1,27 @@
 #include "main.h"
 
 /**
- *  * _putchar - Writes a character to the standard output (stdout).
- *   * @c: The character to be written.
- *    *
- *     * Return: On success, the character written is returned.
- *      * On error, -1 is returned.
- *       *
- *        * Note: This function is provided by you separately. Make sure it is declared
- *         * in the main.h header file.
- *          */
-
-/**
- *  * print_rev - Prints a string in reverse, followed by a new line.
- *   * @s: Pointer to the string to be printed in reverse.
+ *  * rev_string - Reverses a string.
+ *   * @s: Pointer to the string.
  *    */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	    int length = _strlen(s);
+	    int length = 0;
+	        int start = 0;
+		    char temp;
 
-	        for (int i = length - 1; i >= 0; i--)
-			    {
-				            _putchar(s[i]);
-					        }
+		        /* Calculate the length of the string */
+		        while (s[length] != '\0')
+				        length++;
 
-		    _putchar('\n');
+			    /* Reverse the string */
+			    while (start < length - 1)
+				        {
+						        temp = s[start];
+							        s[start] = s[length - 1];
+								        s[length - 1] = temp;
+									        start++;
+										        length--;
+											    }
 }
 

@@ -2,15 +2,19 @@
 
 /**
  *  * _puts - Prints a string, followed by a new line, to stdout.
- *   * @str: Pointer to the string to be printed.
+ *   * @str: Pointer to the string.
  *    */
 void _puts(char *str)
 {
-	    while (*str != '\0')
-		        {
-				        _putchar(*str);
-					        str++;
-						    }
-	        _putchar('\n');
-}
+	    int i = 0;
 
+	        /* Loop through the string and print each character */
+	        while (str[i] != '\0')
+			    {
+				            _putchar(str[i]);
+					            i++;
+						        }
+
+		    _putchar('\n'); // Print a new line after printing the characters
+				    // }
+				    //

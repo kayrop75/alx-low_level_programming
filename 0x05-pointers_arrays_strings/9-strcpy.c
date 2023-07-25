@@ -11,17 +11,17 @@ char *_strcpy(char *dest, char *src)
 {
 	    char *dest_ptr = dest;
 
-	        // Copy the characters from src to dest (including the null terminator)
-		//     while (*src != '\0')
-		//         {
-		//                 *dest = *src;
-		//                         dest++;
-		//                                 src++;
-		//                                     }
-		//
-		//                                         // Add the null terminator to the end of dest
-		//                                             *dest = '\0';
-		//
-		//                                                 return dest_ptr;
-		//                                                 }
-		//
+	        /* Copy the characters from src to dest (including the null terminator) */
+	        while (*src != '\0')
+			    {
+				            *dest = *src;
+					            dest++;
+						            src++;
+							        }
+
+		    /* Add the null terminator to the end of dest */
+		    *dest = '\0';
+
+		        return dest_ptr;
+}
+
