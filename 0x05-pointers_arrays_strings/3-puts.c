@@ -15,6 +15,7 @@ void _puts(char *str)
 					            i++;
 						        }
 
-		    _putchar('\n'); // Print a new line after printing the characters
-				    // }
-				    //
+		    /* Print a new line after printing the characters */
+		    _putchar('\n');
+}
+
