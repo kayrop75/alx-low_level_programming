@@ -1,21 +1,20 @@
 #include "main.h"
-#include <stdio.h> // Include the standard I/O library for putchar function
-		   //
-		   // /**
-		   //  * _puts - Prints a string, followed by a new line, to stdout.
-		   //   * @str: Pointer to the string.
-		   //    */
-		   //    void _puts(char *str)
-		   //    {
-		   //        int i = 0;
-		   //
-		   //            /* Loop through the string and print each character */
-		   //                while (str[i] != '\0')
-		   //                    {
-		   //                            putchar(str[i]); // Use putchar instead of _putchar
-		   //                                    i++;
-		   //                                        }
-		   //
-		   //                                            putchar('\n'); // Print a new line after printing the characters
-		   //                                            }
-		   //
+
+/**
+ *  * _puts - Prints a string, followed by a new line, to stdout.
+ *   * @str: Pointer to the string.
+ *    */
+void _puts(char *str)
+{
+	    int i = 0;
+
+	        /* Loop through the string and print each character */
+	        while (str[i] != '\0')
+			    {
+				            _putchar(str[i]); // Use the _putchar function to print characters
+							      //         i++;
+							      //             }
+							      //
+							      //                 _putchar('\n'); // Print a new line after printing the characters
+							      //                 }
+							      //
